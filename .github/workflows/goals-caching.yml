@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Build
-      run: npm install
     - name: Fetch issues
       uses: actions/github-script@v1
       if: github.repository_owner	!= 'open-sauced'
